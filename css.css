@@ -1,0 +1,138 @@
+
+#buttons_container{
+  display: flex;
+  justify-content: center;
+
+}
+.BtnClass {
+  font-size: 50px;
+  color: brown;
+  font-weight: bold;
+width:150px;
+height:150px;
+border-Radius:20%;
+margin:10px;
+background-color: white;
+opacity :50%;
+} 
+.titleinstruction{
+  text-align: center;
+  font-size: 120px;
+  color: black;
+}
+#linkhome{
+font-size: 60px;
+text-align: center;
+text-decoration-line: none;
+color: brown;
+}
+p{
+  text-align: center;
+  margin: 80px;
+  color: orange;
+  font-weight: bold;
+  bottom: 5px solid white;
+  font-size: 80px;
+}
+/* } */
+
+#title {
+  font-size: 80px;
+  text-align: center;
+  /* מרכז את הכותרת באופן אופקי */
+  animation: shimmer 2s infinite;
+  /* יצירת אנימציה שבה הטקסט יהבהב */
+  font-weight: bold;
+  /* הדגשת הטקסט */
+  text-shadow: 0 0 30px rgba(209, 37, 37, 0.8)
+}
+
+@keyframes shimmer {
+  0% {
+    color: brown;
+  }
+
+  50% {
+    color: brown;
+  }
+
+  100% {
+    color: brown(251, 251, 251);
+  }
+}
+
+#timer {
+  font-size:20vw;
+  color: brown;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-shadow: 0 0 30px red;
+}
+ 
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+ .button {
+  width: 140px;
+  height: 125px;
+  border-radius: 25%;
+  background-color: rgb(227, 13, 216);
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.3s;
+} 
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover #A {
+  opacity: 0;
+  display: none;
+
+}
+ 
+.button #a {
+  opacity: 0;
+  text-decoration: none;
+  font-size:1.7vw;
+  color: rgb(236, 27, 208);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+} 
+
+.button:hover #a {
+  opacity: 25;
+}
+.button span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+}
+
+#print{
+  border: 2px solid white;
+  border-radius: 8vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: min-content;
+  padding: 1.5vw 2vw;
+  background-color: #84C3BF;
+}
